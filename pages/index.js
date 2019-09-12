@@ -1,22 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
+import Navbar from '../components/navbar';
 
 const Index = () => {
     console.log("index finger?");
     return (
         <div>
-            <Link href='/about' >
-                <a>About</a>
-            </Link>
-            <Link href='/about' >
-                <button>About</button>
-            </Link>
-            <Link href='/about' >
-                <span>About</span>
-            </Link>
-            <Link href='/contact' >
-                <a>Contact</a>
-            </Link>
+           <Navbar />
+           <h1>Home</h1>
         </div>
     );
 }
