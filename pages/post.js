@@ -1,15 +1,15 @@
-import { withRouter } from 'next/router';
-
-const Post = props => (
+const Post = ({id}) => {
+    return (
         <>
-            <h1>Post Page</h1>  
-            <p>{props.router.query.id}</p>
+        <h1>Post Page</h1>  
+        <p>{id}</p>
         </>
-);   
+    );   
+}
 
-// Post.getInitialProps = async ({query}) => { 
-//     return query;
-// };
+Post.getInitialProps = async ({query}) => { 
+    return query;
+};
 
 
-export default withRouter(Post);
+export default Post;
