@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function contact() {
-    console.log("where am i running?");
+    console.log("first contact");
     return (
         <div>
             <h1>Leave me alone</h1>
